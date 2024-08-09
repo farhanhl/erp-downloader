@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+      body {
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .market-btn {
+        display: inline-block;
+        padding: 25px 25px;
+        padding-left: 5rem;
+        -webkit-transition: border-color 0.25s ease-in-out,
+          background-color 0.25s ease-in-out;
+        transition: border-color 0.25s ease-in-out,
+          background-color 0.25s ease-in-out;
+        border: 1px solid #e7e7e7;
+        background-position: center left 0.75rem;
+        background-color: #f0f0f0;
+        background-size: 1.5rem 1.5rem;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        border-radius: 15px;
+        width: 400px;
+        height: 75px;
+      }
+      .market-btn .market-button-title {
+        display: block;
+        color: #222;
+        font-size: 30px;
+      }
+      .market-btn .market-button-subtitle {
+        display: block;
+        margin-bottom: -0.25rem;
+        color: #888;
+        font-size: 24px;
+      }
+      .market-btn:hover {
+        background-color: #f7f7f7;
+        text-decoration: none;
+      }
+      .apple-btn {
+        background-image: url(ios.webp);
+        background-size: 50px 50px;
+      }
+      .android-btn {
+        background-image: url(android.png);
+        background-size: 50px 50px;
+      }
+
+      .market-btn-light {
+        border-color: rgba(255, 255, 255, 0.14);
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .market-btn-light .market-button-title {
+        color: #fff;
+      }
+      .market-btn-light .market-button-subtitle {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .market-btn-light:hover {
+        background-color: rgba(255, 255, 255, 0.06);
+      }
+      .market-btn-light.apple-btn {
+        background-image: url(ios.webp);
+      }
+      .market-btn-light.android-btn {
+        background-image: url(ios.webp);
+      }
+
+      .card {
+        padding: 25px;
+        border-radius: 20px;
+        border: #e6e6e6 1px solid;
+        shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+      }
+
+      .content {
+        margin-left: 50px;
+        width: 100%;
+        font-size: 24px;
+      }
+
+      .button {
+        width: 300px;
+      }
+
+      .logo {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        margin-top: 40px;
+      }
+
+      h2 {
+        font-size: 48px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img class="logo" src="icon.png" alt="Logo" class="img-fluid" />
+        <div class="content">
+          <h2>Material Movement</h2>
+          <p>Download the app to get started</p>
+          <div class="button">
+            <a
+              href="itms-services://?action=download-manifest&url=https://api.gmf-aeroasia.co.id/innovation/utils/v2/api/media?bucketname=material-movement&filename=assets/manifest.plist"
+              class="market-btn apple-btn"
+              role="button"
+            >
+              <span class="market-button-subtitle">Download here for</span>
+              <span class="market-button-title">IOS Device</span>
+            </a>
+          </div>
+          <div class="button" style="margin-top: 15px">
+            <a
+              href="https://api-dev.gmf-aeroasia.co.id/td/sdacatalog/api/api/v1/files?path=2024/ipa/1722917643315zqqwmplfvlk_Material_Movement_&_Tracking_Mobility.apk"
+              class="market-btn android-btn"
+              role="button"
+            >
+              <span class="market-button-subtitle">Download here for</span>
+              <span class="market-button-title">Android Device</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
